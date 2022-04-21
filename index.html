@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Offset Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <div class="container">
+      <form action="https://formspree.io/f/xbjwzvrp" id="test-form" method="POST">
+        
+        <div class="form-group">
+            <h1 style="text-align:center;">CARBON OFFSET REDEMPTION</h1>
+            <br>
+            <br>
+           
+            <label>To offset your carbon footprint send your CCRS, CCRF & CCRO tokens to the redemption wallet address below and fill & submit the form, the CarbonDEX NFT Offset Certificate will be sent to your wallet address not later than 3 days from the form submission received date.</label>
+            <br>
+            <br>  
+            <p style="text-align:center;">
+            <img src="CarbonDEX-redemption-wallet.png" alt="">
+            <p style="text-align:center;">0x15A773297E8C321a7b63366b944742e0eec65f0f</p>
+           </p>
+        </div>
+        <div class="form-group">
+          <label for="firstName">Enter the name for the NFT offset certificate:</label>
+          <input type="text" id="firstName" name="CertificateName">
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Enter the wallet address that you used to send the CCR to the redemption wallet:</label>
+          <input type="text" id="lastName" name="WalletAddress" placeholder="0x.....">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" id="email" name="Email">
+        </div>
+
+        <div class="form-group">
+          <label for="massage">State the purpose for carbon offset:</label>
+          <textarea name="OffsetPurpose" id="massage" rows="10" maxlength="200" placeholder="Crypto transactions, NFT transactions, Flights, Vehicle, Shipping, Electrivity, Fuel"></textarea>
+        </div>
+
+        <button type="submit" id="test-form-submit">Submit</button>
+      </form>
+    </div>
+    <div id="status"></div>
+  </section>
+  <script src="./main.js"></script>
+</body>
+</html>
